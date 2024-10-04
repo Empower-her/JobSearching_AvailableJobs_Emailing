@@ -1,0 +1,55 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Page heading styles */
+h1 {
+    color: #4682b4; /* Darker blue for headings */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Job category styles */
+h2 {
+    color: #0056b3; /* Darker blue for skill categories */
+    border-bottom: 2px solid #0056b3; /* Underline for category title */
+    padding-bottom: 5px;
+    margin-top: 40px; /* Space above category titles */
+}
+
+/* Job listings */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+/* Job item styles */
+ul li {
+    background-color: #e6f2ff; /* Light blue background for job items */
+    margin: 10px 0; /* Space between job items */
+    padding: 15px; /* Padding within job items */
+    border-left: 4px solid #4682b4; /* Left border color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Back link styles */
+a.back-button {
+    display: block; /* Make it a block-level element */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space above */
+    padding: 10px 20px; /* Padding for button-like appearance */
+    background-color: #4682b4; /* Button color */
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+}
+
+a.back-button:hover {
+    background-color: #5a9bd3; /* Change color on hover */
+}

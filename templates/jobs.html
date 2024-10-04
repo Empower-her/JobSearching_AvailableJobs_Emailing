@@ -1,0 +1,33 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Job Listings</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Available Jobs</h1>
+
+    {% for skill, jobs in grouped_jobs.items() %}
+        <h2>{{ skill|capitalize }} Jobs</h2>
+        <ul>
+            {% for job in jobs %}
+                <li>
+                    {{ job['job_id'] }} at {{ job['name_of_organization'] }} - 
+                    Location: {{ job['location'] }}, Salary: {{ job['salary'] }}
+                    <form action="{{ url_for('apply_job') }}" method="post">
+                        <input type="hidden" name="job_id" value="{{ job['jobid'] }}">
+                        <input type="hidden" name="skill" value="{{ skill }}">  <!--Add skill here -->
+                        <input type="email" name="user_email" placeholder="Your email" required>
+                        <button type="submit">Apply</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endfor %}
+    <a class="back-button" href="/">Back</a>
+</body>
+</html>
+
+
+

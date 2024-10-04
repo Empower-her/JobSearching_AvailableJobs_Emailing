@@ -1,0 +1,94 @@
+/* General page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;               /* Use flexbox for centering */
+    justify-content: center;     /* Center horizontally */
+    align-items: center;         /* Center vertically */
+    height: 100vh;              /* Full height of the viewport */
+}
+
+/* Page heading styles */
+h1, h2 {
+    color: #004085; /* Darker blue for headings */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below headings */
+}
+
+/* Job category styles */
+h2 {
+    color: #0056b3; /* Darker blue for skill categories */
+    border-bottom: 2px solid #0056b3; /* Underline for category title */
+    padding-bottom: 5px; /* Space below the underline */
+}
+
+/* Form Container for Job Search */
+.form-container {
+    width: 400px;               /* Set a fixed width for the form container */
+    padding: 20px;              /* Padding for the container */
+    background-color: #ffffff;  /* White background for the form */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    border-radius: 10px;        /* Rounded corners */
+}
+
+/* Form and Button Styling */
+label {
+    display: block;           /* Block display for labels */
+    margin-bottom: 5px;      /* Space between label and input */
+}
+
+input[type="text"] {
+    width: 100%;              /* Full width for inputs */
+    padding: 10px;            /* Padding for inputs */
+    margin-bottom: 15px;      /* Space below inputs */
+    border: 1px solid #ccc;   /* Light border */
+    border-radius: 5px;       /* Rounded corners for inputs */
+}
+
+button {
+    width: 100%;              /* Full width for the button */
+    padding: 10px;            /* Padding for button */
+    background-color: #0056b3; /* Button color */
+    color: white;             /* Text color */
+    border: none;             /* No border */
+    border-radius: 5px;      /* Rounded corners */
+    cursor: pointer;          /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #004085; /* Darker shade on hover */
+}
+
+/* Job listings */
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+/* Job item styles */
+ul li {
+    background-color: #e6f2ff; /* Light blue background for job items */
+    margin: 10px 0; /* Space between job items */
+    padding: 15px; /* Padding within job items */
+    border-left: 4px solid #4682b4; /* Left border color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Back link styles */
+a.back-button {
+    display: block; /* Make it a block-level element */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space above */
+    padding: 10px 20px; /* Padding for button-like appearance */
+    background-color: #4682b4; /* Button color */
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+a.back-button:hover {
+    background-color: #5a9bd3; /* Change color on hover */
+}
